@@ -4,8 +4,8 @@ import Navbar from "../components/shared/navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div>
-      <div className="mx-[100px] my-6">
+    <div className="bg-[#F6F7F8]">
+      <div className="mx-[100px] py-6">
         <Navbar />
       </div>
       <div className="h-screen">

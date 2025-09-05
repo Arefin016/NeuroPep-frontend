@@ -11,7 +11,7 @@ import {
   HumanSvg,
   SearchSvg,
 } from "../../../svg-container/SvgContainer";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const [, setDropdown1Open] = useState(false);
@@ -22,9 +22,15 @@ const Navbar = () => {
     { value: "SP", label: "Spanish" },
   ];
   return (
-    <div className="flex justify-between items-center font-inter">
+    <div className="flex justify-between items-center font-inter z-50 relative">
       {/* This is the logo section */}
-      <img className="w-[118px] h-[80px] object-cover" src={logo} alt="logo" />
+      <Link to={"/"}>
+        <img
+          className="w-[120px] h-[80px] object-cover"
+          src={logo}
+          alt="logo"
+        />
+      </Link>
       {/* This is the navigation section */}
       <div className="flex gap-12 text-lg">
         <NavLink
@@ -91,7 +97,7 @@ const Navbar = () => {
       {/* This is the language and svg */}
       <div className="flex gap-12 items-center">
         {/* This is the language and other svg */}
-        <div className="flex space-x-2 p-4">
+        <div className="flex space-x-2 ">
           <div className="relative inline-block text-left">
             <Select
               value={selected1}
