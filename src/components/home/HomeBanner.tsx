@@ -17,7 +17,7 @@ const HomeBanner = () => {
           <h1 className="text-[#37404A] text-[64px] font-bold relative z-20">
             Secure, Reliable, and Lab Tested Products for Researchers
           </h1>
-          <p className="text-[#637381] text-lg font-medium max-w-[437px] w-full mt-4">
+          <p className="text-[#637381] text-lg font-medium max-w-[437px] w-full mt-4 relative z-20">
             American-made, veteran-owned products trusted by researchers
             nationwide.
           </p>
@@ -71,7 +71,7 @@ const HomeBanner = () => {
       />
       {/* This is the Trusted Purity */}
       <div className="max-w-[300px] w-full bg-[#ffffffdf] p-6 rounded-[12px] shadow-box absolute top-[540px] right-[200px]">
-        <p className="text-[#6DB1EE] text-xl font-semibold z-50">
+        <p className="text-[#6DB1EE] text-xl font-semibold relative z-[999]">
           Trusted Purity
         </p>
         <p className="text-[#637381]">
