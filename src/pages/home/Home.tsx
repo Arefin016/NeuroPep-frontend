@@ -8,21 +8,21 @@ import TrustedPartner from "../../components/home/TrustedPartner";
 
 const Home = () => {
   return (
-    <div>
+    <div className="space-y-40">
       <HomeBanner />
-      <div className="mb-[160px] mt-[120px]">
+      <div className="-mt-40">
         <TrustedPartner />
       </div>
-      <div className="my-[160px]">
+      <div>
         <FeaturedProducts />
       </div>
-      <div className="my-[160px]">
+      <div>
         <ChooseUs />
       </div>
-      <div className="my-[160px]">
+      <div>
         <FAQ />
       </div>
-      <div className="my-[160px]">
+      <div>
         <CustomersSay />
       </div>
       <div>

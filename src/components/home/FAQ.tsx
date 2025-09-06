@@ -6,49 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
+import { accordionData } from "../../lib/mockData";
 
 const FAQ = () => {
-  const accordionData = [
-    {
-      value: "item-1",
-      title: "Are these products safe for human consumption?",
-      content: [
-        "No. All products are strictly for laboratory and research use only. They are not intended for human consumption under any circumstances.",
-      ],
-    },
-    {
-      value: "item-2",
-      title: "How do I place an order?",
-      content: [
-        "We offer worldwide shipping through trusted courier partners. Standard delivery takes 3-5 business days, while express shipping ensures delivery within 1-2 business days.",
-        "All orders are carefully packaged and fully insured. Track your shipment in real-time through our dedicated tracking portal.",
-      ],
-    },
-    {
-      value: "item-3",
-      title: "What payment methods do you accept?",
-      content: [
-        "We stand behind our products with a comprehensive 30-day return policy. If you're not completely satisfied, simply return the item in its original condition.",
-        "Our hassle-free return process includes free return shipping and full refunds processed within 48 hours of receiving the returned item.",
-      ],
-    },
-    {
-      value: "item-4",
-      title: "Is my payment information secure?",
-      content: [
-        "We stand behind our products with a comprehensive 30-day return policy. If you're not completely satisfied, simply return the item in its original condition.",
-        "Our hassle-free return process includes free return shipping and full refunds processed within 48 hours of receiving the returned item.",
-      ],
-    },
-    {
-      value: "item-5",
-      title: "What is your refund policy?",
-      content: [
-        "We stand behind our products with a comprehensive 30-day return policy. If you're not completely satisfied, simply return the item in its original condition.",
-        "Our hassle-free return process includes free return shipping and full refunds processed within 48 hours of receiving the returned item.",
-      ],
-    },
-  ];
   return (
     <div className="mx-[250px]">
       {/* This is the title section */}
@@ -82,11 +42,12 @@ const FAQ = () => {
             defaultValue="item-1"
           >
             <Accordion type="single" collapsible>
-              {accordionData.map((item) => (
-                <AccordionItem key={item.value} value={item.value}>
-                  <AccordionTrigger className="group rounded-md hover:no-underline">
-                    <span
-                      className="
+              {accordionData &&
+                accordionData?.map((item) => (
+                  <AccordionItem key={item?.value} value={item?.value}>
+                    <AccordionTrigger className="group rounded-md hover:no-underline">
+                      <span
+                        className="
       w-fit text-lg font-semibold 
       text-[#454F5B] 
       group-data-[state=open]:bg-gradient-to-tr 
@@ -95,19 +56,19 @@ const FAQ = () => {
       group-data-[state=open]:bg-clip-text 
       group-data-[state=open]:text-transparent
     "
-                    >
-                      {item.title}
-                    </span>
-                  </AccordionTrigger>
-                  <AccordionContent className="flex flex-col gap-4 text-balance">
-                    {item.content.map((text, idx) => (
-                      <p key={idx} className="text-[#637381] text-base">
-                        {text}
-                      </p>
-                    ))}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
+                      >
+                        {item?.title}
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent className="flex flex-col gap-4 text-balance">
+                      {item?.content?.map((text, idx) => (
+                        <p key={idx} className="text-[#637381] text-base">
+                          {text}
+                        </p>
+                      ))}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
             </Accordion>
           </Accordion>
         </div>
