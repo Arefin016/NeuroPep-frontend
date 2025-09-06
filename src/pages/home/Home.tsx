@@ -3,6 +3,7 @@ import CustomersSay from "../../components/home/CustomersSay";
 import FAQ from "../../components/home/FAQ";
 import FeaturedProducts from "../../components/home/FeaturedProducts";
 import HomeBanner from "../../components/home/HomeBanner";
+import ReadyToOrder from "../../components/home/ReadyToOrder";
 import TrustedPartner from "../../components/home/TrustedPartner";
 
 const Home = () => {
@@ -23,6 +24,9 @@ const Home = () => {
       </div>
       <div className="my-[160px]">
         <CustomersSay />
+      </div>
+      <div>
+        <ReadyToOrder />
       </div>
     </div>
   );
