@@ -43,6 +43,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --font-inter: "Inter", sans-serif;
   --shadow-box: 4px 8px 28px 0 rgba(0, 35, 53, 0.06);
+  --shadow-cardBox: 0 9.366px 21.854px 0 rgba(0, 0, 0, 0.04);
 }
 
 :root {

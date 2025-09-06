@@ -13,7 +13,7 @@ const HomeBanner = () => {
     <div className="mx-[223px] font-inter h-screen">
       <div className="grid grid-cols-2">
         {/* This is the left text */}
-        <div className="mt-[20px]">
+        <div className="mt-[50px]">
           <h1 className="text-[#37404A] text-[64px] font-bold relative z-20">
             Secure, Reliable, and Lab Tested Products for Researchers
           </h1>
