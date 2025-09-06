@@ -1,4 +1,5 @@
 import ChooseUs from "../../components/home/ChooseUs";
+import CustomersSay from "../../components/home/CustomersSay";
 import FAQ from "../../components/home/FAQ";
 import FeaturedProducts from "../../components/home/FeaturedProducts";
 import HomeBanner from "../../components/home/HomeBanner";
@@ -19,6 +20,9 @@ const Home = () => {
       </div>
       <div className="my-[160px]">
         <FAQ />
+      </div>
+      <div className="my-[160px]">
+        <CustomersSay />
       </div>
     </div>
   );
