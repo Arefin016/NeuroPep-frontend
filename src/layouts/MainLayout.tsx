@@ -8,9 +8,7 @@ const MainLayout = () => {
       <div className="mx-[100px] py-6">
         <Navbar />
       </div>
-      <div className="h-screen">
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </div>
   );
