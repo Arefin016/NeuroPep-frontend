@@ -9,6 +9,9 @@ import "swiper/css";
 // @ts-ignore
 import "swiper/css/pagination";
 import Card from "../common/card/Card";
+import { Autoplay } from "swiper/modules";
+import { Link } from "react-router";
+import { LearnMoreSvg } from "../../svg-container/SvgContainer";
 
 const FeaturedProducts = () => {
   const products = [
@@ -76,6 +79,12 @@ const FeaturedProducts = () => {
         <Swiper
           slidesPerView={"auto"}
           spaceBetween={20}
+          // loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           centeredSlides={true}
           pagination={{
             clickable: true,
@@ -92,6 +101,22 @@ const FeaturedProducts = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* This is the button section */}
+        <div className="max-w-[154px] mx-auto w-full mt-12">
+          <Link
+            to="/shop"
+            className="bg-gradient-to-b from-[#6DB1EE] to-[#4EA2ED] 
+             flex items-center justify-center gap-3 
+             text-white font-medium py-3
+              rounded-[12px] 
+             transition-all duration-300 
+             hover:from-[#4EA2ED] hover:to-[#6DB1EE] 
+             hover:shadow-lg 
+             active:scale-95"
+          >
+            View all <LearnMoreSvg />
+          </Link>
+        </div>
       </>
     </div>
   );
