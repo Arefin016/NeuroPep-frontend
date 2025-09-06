@@ -183,7 +183,7 @@ export const ResearchUseOnlySvg = () => {
         stroke="url(#paint0_linear_20963_1510)"
         strokeWidth="1.5"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -216,7 +216,7 @@ export const PreciselyMeasuredSvg = () => {
         stroke="url(#paint0_linear_20970_1981)"
         strokeWidth="1.5"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -657,6 +657,62 @@ export const FastCheckoutSvg = () => {
           <rect width="56" height="56" fill="white" />
         </clipPath>
       </defs>
+    </svg>
+  );
+};
+
+export const CollapseIconSvg = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="21"
+      height="21"
+      viewBox="0 0 21 21"
+      fill="none"
+      className={className}
+    >
+      <path
+        d="M16.7961 9.89722L4.79614 9.89722"
+        stroke="#6DB1EE"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4.79126 9.9021H16.7913"
+        stroke="#6DB1EE"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ExpandIconSvg = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="none"
+      className={className}
+    >
+      <path
+        d="M7.79126 1.31958V13.3196"
+        stroke="#637381"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M1.79126 7.31958H13.7913"
+        stroke="#637381"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 };
